@@ -1,0 +1,30 @@
+DEFINE_REACTIONS
+{
+  Glutamate' + GluT0' -> GluT1' [3.6e+07] : GluT0_GluT1
+  GluT1' -> GluT0' + Glutamate' [360] : GluT1_GluT0
+  GluT1' -> GluT2' [360] : GluT1_GluT2
+  GluT2' -> GluT0' [51.4] : GluT2_GluT0
+  Glutamate' + AMPA_C0' -> AMPA_C1' [4590000.0] : AMPAC0_AMPAC1
+  AMPA_C1' -> AMPA_C0' + Glutamate' [4260] : AMPAC1_AMPAC0
+  Glutamate' + AMPA_C1' -> AMPA_C2' [28400000.0] : AMPAC1_AMPAC2
+  AMPA_C2' -> Glutamate' + AMPA_C1' [3260] : AMPAC2_AMPCAC1
+  AMPA_C2' -> AMPA_O' [4240] : AMPAC2_AMPAO
+  AMPA_O' -> AMPA_C2' [900] : AMPAO_AMPAC2
+  AMPA_C1' -> AMPA_C3' [2890] : AMPAC1_AMPAC3
+  AMPA_C3' -> AMPA_C1' [39.2] : AMPAC3_AMPAC1
+  AMPA_C2' -> AMPA_C4' [172] : AMPAC2_AMPAC4
+  AMPA_C4' -> AMPA_C2' [0.727] : AMPAC4_AMPAC2
+  AMPA_O' -> AMPA_C5' [17.7] : AMPAO_AMPAC5
+  AMPA_C5' -> AMPA_O' [4.0] : AMPAC5_AMPAO
+  Glutamate' + AMPA_C3' -> AMPA_C4' [1270000.0] : AMPAC3_AMPAC4
+  AMPA_C4' -> AMPA_C3' + Glutamate' [45.7] : AMPAC4_AMPAC3
+  AMPA_C4' -> AMPA_C5' [16.8] : AMPAC4_AMPAC5
+  AMPA_C5' -> AMPA_C4' [190] : AMPAC5_AMPAC4
+  Glutamate' + GluSnFR_off' -> GluSnFR_on' [0] : GluSnFRoff_GluSnFRon
+  GluSnFR_on' -> Glutamate' + GluSnFR_off' [0] : GluSnFRon_GluSnFRoff
+  Glutamate' + GluSnFR_twoStep_off' -> GluSnFR_twoStep_intermediate' [28000000.0] : GluSnFRTwoStepOff_GluSnFRTwoStepIntermediate
+  GluSnFR_twoStep_intermediate' -> GluSnFR_twoStep_on' [2480.0] : GluSnFRTwoStepIntemediate_GlusnFRTwoStepOn
+  GluSnFR_twoStep_intermediate' -> Glutamate' + GluSnFR_twoStep_off' [8200.0] : GluSnFRTwoStepIntermediate_GluSnFRTwoStepOff
+  GluSnFR_twoStep_on' -> GluSnFR_twoStep_intermediate' [111.0] : GluSnFRTwoStepOn_GluSnFRTwoStepIntermediate
+}
+

@@ -1,0 +1,12 @@
+MODIFY_SURFACE_REGIONS
+{
+  SceneLimit[SceneLimit_sr]
+  {
+    SURFACE_CLASS = sceneLimit_sc
+  }
+  Cleft[Cleft_sr]
+  {
+    SURFACE_CLASS = empty
+  }
+}
+

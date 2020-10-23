@@ -1,0 +1,68 @@
+DEFINE_MOLECULES
+{
+  Glutamate
+  {
+    DIFFUSION_CONSTANT_3D = 3e-06
+  }
+  GluT0
+  {
+    DIFFUSION_CONSTANT_2D = 0
+  }
+  GluT1
+  {
+    DIFFUSION_CONSTANT_2D = 0
+  }
+  GluT2
+  {
+    DIFFUSION_CONSTANT_2D = 0
+  }
+  GluSnFR_off
+  {
+    DIFFUSION_CONSTANT_2D = 0
+  }
+  GluSnFR_on
+  {
+    DIFFUSION_CONSTANT_2D = 0
+  }
+  AMPA_C0
+  {
+    DIFFUSION_CONSTANT_2D = 0
+  }
+  AMPA_C1
+  {
+    DIFFUSION_CONSTANT_2D = 0
+  }
+  AMPA_C2
+  {
+    DIFFUSION_CONSTANT_2D = 0
+  }
+  AMPA_C3
+  {
+    DIFFUSION_CONSTANT_2D = 0
+  }
+  AMPA_C4
+  {
+    DIFFUSION_CONSTANT_2D = 0
+  }
+  AMPA_C5
+  {
+    DIFFUSION_CONSTANT_2D = 0
+  }
+  AMPA_O
+  {
+    DIFFUSION_CONSTANT_2D = 0
+  }
+  GluSnFR_twoStep_off
+  {
+    DIFFUSION_CONSTANT_2D = 0
+  }
+  GluSnFR_twoStep_intermediate
+  {
+    DIFFUSION_CONSTANT_2D = 0
+  }
+  GluSnFR_twoStep_on
+  {
+    DIFFUSION_CONSTANT_2D = 0
+  }
+}
+

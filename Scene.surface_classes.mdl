@@ -1,0 +1,12 @@
+DEFINE_SURFACE_CLASSES
+{
+  empty
+  {
+    TRANSPARENT = Glutamate;
+  }
+  sceneLimit_sc
+  {
+    REFLECTIVE = Glutamate;
+  }
+}
+

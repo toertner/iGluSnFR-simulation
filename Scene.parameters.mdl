@@ -1,0 +1,6 @@
+/* DEFINE PARAMETERS */
+Glutamate_diff = 0.000002    /* Glutamate diffusion [cm²/s]  */
+Glutamate_quantum = 3000.000000    /* Glutamate vesicle quantum [N]  */
+Iterations = 1000.000000    /* Number of iterations  */
+TimeStep = 0.000000    /* Time step  */
+

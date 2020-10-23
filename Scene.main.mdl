@@ -1,0 +1,80 @@
+CHECKPOINT_INFILE = "chkptFile_START"
+CHECKPOINT_OUTFILE = "chkptFile_PULSE"
+CHECKPOINT_ITERATIONS = 4800000.0
+INCLUDE_FILE = "Scene.parameters.mdl"
+
+ITERATIONS = 5000000
+TIME_STEP = 1e-08
+VACANCY_SEARCH_DISTANCE = 10
+
+INCLUDE_FILE = "Scene.initialization.mdl"
+
+PARTITION_X = [[-0.57 TO 0.47 STEP 0.05]]
+PARTITION_Y = [[-0.52 TO 0.52 STEP 0.05]]
+PARTITION_Z = [[-1.52 TO 1.52 STEP 0.05]]
+
+INCLUDE_FILE = "Scene.molecules.mdl"
+
+INCLUDE_FILE = "Scene.surface_classes.mdl"
+
+INCLUDE_FILE = "Scene.reactions.mdl"
+
+INCLUDE_FILE = "Scene.geometry.mdl"
+
+INCLUDE_FILE = "Scene.mod_surf_regions.mdl"
+
+INCLUDE_FILE = "Scene.release_patterns.mdl"
+
+INSTANTIATE Scene OBJECT
+{
+  Astrocyte OBJECT Astrocyte {}
+  Axon OBJECT Axon {}
+  Cleft OBJECT Cleft {}
+  Dendrite OBJECT Dendrite {}
+  SceneLimit OBJECT SceneLimit {}
+  Glutamate_rs_0 RELEASE_SITE
+  {
+   SHAPE = SPHERICAL
+   LOCATION = [0.0005, -0.0, 0.0]
+   SITE_DIAMETER = 0.001
+   MOLECULE = Glutamate
+   NUMBER_TO_RELEASE = 3000
+   RELEASE_PROBABILITY = 1
+   RELEASE_PATTERN = SinglePulse
+  }
+  GluT_site RELEASE_SITE
+  {
+   SHAPE = Scene.Astrocyte[Astrocyte_sr]
+   MOLECULE = GluT0'
+   DENSITY = 10000
+   RELEASE_PROBABILITY = 1
+  }
+  GluSnFR_site RELEASE_SITE
+  {
+   SHAPE = Scene.Axon[AxonCorpus_sr]
+   MOLECULE = GluSnFR_off'
+   DENSITY = 0
+   RELEASE_PROBABILITY = 1
+  }
+  AMPA_C0_rs RELEASE_SITE
+  {
+   SHAPE = Scene.Dendrite[PSD_sr]
+   MOLECULE = AMPA_C0'
+   DENSITY = 1200
+   RELEASE_PROBABILITY = 1
+  }
+  GluSnFR_twoStep_site RELEASE_SITE
+  {
+   SHAPE = Scene.Axon[AxonCorpus_sr]
+   MOLECULE = GluSnFR_twoStep_off'
+   DENSITY = 1000
+   RELEASE_PROBABILITY = 1
+  }
+}
+
+sprintf(seed,"%05g",SEED)
+
+INCLUDE_FILE = "Scene.viz_output.mdl"
+
+INCLUDE_FILE = "Scene.rxn_output.mdl"
+

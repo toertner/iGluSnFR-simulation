@@ -1,0 +1,32 @@
+REACTION_DATA_OUTPUT
+{
+STEP=1e-06
+  {COUNT[Glutamate,Scene.SceneLimit]}=> "./react_data/seed_" & seed & "/Glutamate.SceneLimit.dat"
+  {COUNT[GluT0,WORLD]}=> "./react_data/seed_" & seed & "/GluT0.World.dat"
+  {COUNT[GluT1,WORLD]}=> "./react_data/seed_" & seed & "/GluT1.World.dat"
+  {COUNT[GluT2,WORLD]}=> "./react_data/seed_" & seed & "/GluT2.World.dat"
+  {COUNT[GluSnFR_off,WORLD]}=> "./react_data/seed_" & seed & "/GluSnFR_off.World.dat"
+  {COUNT[GluSnFR_on,WORLD]}=> "./react_data/seed_" & seed & "/GluSnFR_on.World.dat"
+  {COUNT[AMPA_C0,WORLD]}=> "./react_data/seed_" & seed & "/AMPA_C0.World.dat"
+  {COUNT[AMPA_C1,WORLD]}=> "./react_data/seed_" & seed & "/AMPA_C1.World.dat"
+  {COUNT[AMPA_C2,WORLD]}=> "./react_data/seed_" & seed & "/AMPA_C2.World.dat"
+  {COUNT[AMPA_C3,WORLD]}=> "./react_data/seed_" & seed & "/AMPA_C3.World.dat"
+  {COUNT[AMPA_C4,WORLD]}=> "./react_data/seed_" & seed & "/AMPA_C4.World.dat"
+  {COUNT[AMPA_C5,WORLD]}=> "./react_data/seed_" & seed & "/AMPA_C5.World.dat"
+  {COUNT[AMPA_O,WORLD]}=> "./react_data/seed_" & seed & "/AMPA_O.World.dat"
+  {COUNT[Glutamate,Scene.Cleft]}=> "./react_data/seed_" & seed & "/Glutamate.Cleft.dat"
+  {COUNT[Glutamate,Scene.Axon]}=> "./react_data/seed_" & seed & "/Glutamate.Axon.dat"
+  {COUNT[GluSnFR_twoStep_on,WORLD]}=> "./react_data/seed_" & seed & "/GluSnFR_twoStep_on.World.dat"
+  {COUNT[GluSnFR_twoStep_off,WORLD]}=> "./react_data/seed_" & seed & "/GluSnFR_twoStep_off.World.dat"
+  {COUNT[GluSnFR_twoStep_intermediate,WORLD]}=> "./react_data/seed_" & seed & "/GluSnFR_twoStep_intermediate.World.dat"
+  {COUNT[GluSnFR_twoStep_off,Scene.Axon[PSF_sr]]}=> "./react_data/seed_" & seed & "/GluSnFR_twoStep_off.Axon.PSF_sr.dat"
+  {COUNT[GluSnFR_twoStep_off,Scene.Axon[ActiveZone_sr]]}=> "./react_data/seed_" & seed & "/GluSnFR_twoStep_off.Axon.ActiveZone_sr.dat"
+  {COUNT[GluSnFR_twoStep_intermediate,Scene.Axon[ActiveZone_sr]]}=> "./react_data/seed_" & seed & "/GluSnFR_twoStep_intermediate.Axon.ActiveZone_sr.dat"
+  {COUNT[GluSnFR_twoStep_intermediate,Scene.Axon[PSF_sr]]}=> "./react_data/seed_" & seed & "/GluSnFR_twoStep_intermediate.Axon.PSF_sr.dat"
+  {COUNT[GluSnFR_twoStep_on,Scene.Axon[PSF_sr]]}=> "./react_data/seed_" & seed & "/GluSnFR_twoStep_on.Axon.PSF_sr.dat"
+  {COUNT[GluSnFR_twoStep_on,Scene.Axon[ActiveZone_sr]]}=> "./react_data/seed_" & seed & "/GluSnFR_twoStep_on.Axon.ActiveZone_sr.dat"
+  {COUNT[GluSnFR_off,Scene.Axon[PSF_sr]]}=> "./react_data/seed_" & seed & "/GluSnFR_off.Axon.PSF_sr.dat"
+  {COUNT[GluSnFR_off,Scene.Axon[ActiveZone_sr]]}=> "./react_data/seed_" & seed & "/GluSnFR_off.Axon.ActiveZone_sr.dat"
+  {COUNT[GluSnFR_on,Scene.Axon[PSF_sr]]}=> "./react_data/seed_" & seed & "/GluSnFR_on.Axon.PSF_sr.dat"
+}
+
